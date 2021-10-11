@@ -25,6 +25,7 @@ export function validateProp (
   vm?: Component
 ): any {
   const prop = propOptions[key]
+  //用户提供的props中不存在这个key
   const absent = !hasOwn(propsData, key)
   let value = propsData[key]
   // boolean casting
